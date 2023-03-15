@@ -1,0 +1,15 @@
+<Project>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+		<Content Include="$(MSBuildThisFileDirectory)..\contentFiles\any\net48\**">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Link>net48\%(Filename)%(Extension)</Link>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
+		<Content Include="$(MSBuildThisFileDirectory)..\contentFiles\any\net6.0\**">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Link>net6.0\%(Filename)%(Extension)</Link>
+		</Content>
+	</ItemGroup>
+</Project>
