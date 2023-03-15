@@ -1,0 +1,2 @@
+# Nuget-BuildTransitive
+Nuget包的buildTransitive行为示例
